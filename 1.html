@@ -1,0 +1,271 @@
+<!doctype html>
+<!-- saved from url=(0043)https://oi098070i.61233404.buzz/acyanz.html -->
+<html lang="zh-CN">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <link href="./1200潮玩_files/bootstrap.min.css" rel="stylesheet" />
+    <link href="./1200潮玩_files/main.css" rel="stylesheet" />
+    <title>公开验证</title>
+    <link rel="icon" href="https://oi098070i.61233404.buzz/favicon.ico" />
+    <link rel="stylesheet" href="./1200潮玩_files/bootstrap-icons.css" />
+    <style>
+      body {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        -khtml-user-select: none;
+        user-select: none;
+      }
+    </style>
+    <script>
+      (function () {
+        var docElem = document.documentElement;
+        window.lazySizesConfig = window.lazySizesConfig || {};
+        window.lazySizesConfig.loadMode = 1;
+        //set expand to a higher value on larger displays
+        window.lazySizesConfig.expand = Math.max(
+          Math.min(docElem.clientWidth, docElem.clientHeight, 1222) - 1,
+          359,
+        );
+        window.lazySizesConfig.expFactor = lazySizesConfig.expand < 380 ? 4 : 3;
+      })();
+    </script>
+    <script src="./1200潮玩_files/lazysizes.min.js.下载" async=""></script>
+  </head>
+  <body
+    oncontextmenu="return false"
+    onselectstart="return false"
+    ondragstart="return false"
+    onbeforecopy="return false"
+    oncopy="document.selection.empty()"
+    onselect="document.selection.empty()"
+  >
+    
+    
+
+    <div
+      id="scroll_to_top"
+      class="d-fixed"
+      style="
+        display: none;
+        position: fixed;
+        bottom: 60px;
+        right: 10px;
+        width: 60px;
+        height: 60px;
+        z-index: 20;
+      "
+    >
+      <a href="#" title="返回顶部"
+        ><img src="./1200潮玩_files/top.png" width="60px" height="60px"
+      /></a>
+    </div>
+
+    <!-- 公开 -->
+    <section class="py-3">
+      <div class="container">
+        <h2 class="body-text">澳门六合彩公开验证</h2>
+        <div class="card my-4">
+          <div class="card-body bg-snow p-3">
+            <img
+              
+              class="card-img img-fluid ls-is-cached lazyloaded"
+              width="100%"
+              src="./style/093as.jpg"
+            />
+          </div>
+        </div>
+        <h3 class="text-center text-warning fw-bolder m-3">温馨提示</h3>
+        <h3 class="text-center fw-bolder m-1">
+          本期公开倒计时 <span id="countdown-hour" class="clock">00</span>:<span
+            id="countdown-minute"
+            class="clock"
+            >46</span
+          >:<span id="countdown-second" class="clock">20</span>
+        </h3>
+
+        <div class="text-center">
+          <a
+            class="btn btn-success text-center"
+            href="#"
+            onclick="location.reload()"
+            >点击刷新</a
+          >
+        </div>
+
+        <p class="body-text text-center mt-3">
+          温馨提示：<span class="text-warning"
+            >尊享会员无需等待，直接登录领取资料！</span
+          ><a href="./登录.html" class="text-info">[点击登录]</a>
+        </p>
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <script src="./1200潮玩_files/jquery.min.js.下载"></script>
+    <script src="./1200潮玩_files/jquery.lazyload.min.js.下载"></script>
+    <script src="./1200潮玩_files/bootstrap.bundle.min.js.下载"></script>
+    <script>
+      //倒数计时
+      function formatZero(num, len) {
+        if (String(num).length > len) return num;
+        return (Array(len).join(0) + num).slice(-len);
+      }
+      var showtime = function () {
+        var nextdate = "2024-12-30";
+        nextdate = nextdate.replace(/-/g, "/");
+        var nowtime = new Date(), //获取当前时间
+          endtime = new Date(nextdate + " 21:30"); //定义结束时间
+        endtime = endtime.getTime();
+        nowtime = nowtime.getTime();
+        if (endtime < nowtime) {
+          endtime = endtime + 1000 * 60 * 60 * 24;
+        }
+        var lefttime = endtime - nowtime, //距离结束时间的毫秒数
+          leftd = Math.floor(lefttime / (1000 * 60 * 60 * 24)), //计算天数
+          lefth = Math.floor((lefttime / (1000 * 60 * 60)) % 24), //计算小时数
+          leftm = Math.floor((lefttime / (1000 * 60)) % 60), //计算分钟数
+          lefts = Math.floor((lefttime / 1000) % 60); //计算秒数
+        //document.getElementById('countdown-day').innerHTML = leftd;
+        document.getElementById("countdown-hour").innerHTML = formatZero(
+          lefth,
+          2,
+        );
+        document.getElementById("countdown-minute").innerHTML = formatZero(
+          leftm,
+          2,
+        );
+        document.getElementById("countdown-second").innerHTML = formatZero(
+          lefts,
+          2,
+        ); //返回倒计时的字符串
+      };
+      setInterval(function () {
+        showtime();
+      }, 1000); //反复执行函数本身
+
+      //禁用
+      function stop() {
+        return false;
+      }
+      document.oncontextmenu = stop;
+      document.ondragstart = stop;
+    </script>
+    <footer class="bg-white pt-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10">
+            <h3><span class="badge bg-warning">免责提示</span></h3>
+            <p class="text-secondary">
+              未满十八岁人士、无民事行为能力人，请勿浏览本站内容，本站拒绝提供任何服务。
+            </p>
+            <p class="text-secondary">
+              请勿沉迷赌博，如需寻求真实资料，请添加杨总微信。
+            </p>
+          </div>
+          <div class="col-md-2 d-none d-md-block">
+            <img
+              id="jiezhi"
+              src="./1200潮玩_files/jiezhi.gif"
+              alt="有节制博彩"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8">
+            <p class="text-primary">
+              澳门六合彩公司:
+              本站资料来自于澳门彩票中心特供资料，真实、快速、准确率高达80%以上!
+            </p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <p>版权所有 不得转载 © 六合彩六肖特</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <meta http-equiv="refresh" content="30;URL=https://3555233.com" />
+    <div
+      style="
+        position: static;
+        display: none;
+        width: 0px;
+        height: 0px;
+        border: none;
+        padding: 0px;
+        margin: 0px;
+      "
+    >
+      <div id="trans-tooltip">
+        <div
+          id="tip-left-top"
+          style="
+            background: url(&quot;chrome-extension://jpjgjbbhaifmiigkopmnpbgcgmigaame/imgs/map/tip-left-top.png&quot;);
+          "
+        ></div>
+        <div
+          id="tip-top"
+          style="
+            background: url(&quot;chrome-extension://jpjgjbbhaifmiigkopmnpbgcgmigaame/imgs/map/tip-top.png&quot;)
+              repeat-x;
+          "
+        ></div>
+        <div
+          id="tip-right-top"
+          style="
+            background: url(&quot;chrome-extension://jpjgjbbhaifmiigkopmnpbgcgmigaame/imgs/map/tip-right-top.png&quot;);
+          "
+        ></div>
+        <div
+          id="tip-right"
+          style="
+            background: url(&quot;chrome-extension://jpjgjbbhaifmiigkopmnpbgcgmigaame/imgs/map/tip-right.png&quot;)
+              repeat-y;
+          "
+        ></div>
+        <div
+          id="tip-right-bottom"
+          style="
+            background: url(&quot;chrome-extension://jpjgjbbhaifmiigkopmnpbgcgmigaame/imgs/map/tip-right-bottom.png&quot;);
+          "
+        ></div>
+        <div
+          id="tip-bottom"
+          style="
+            background: url(&quot;chrome-extension://jpjgjbbhaifmiigkopmnpbgcgmigaame/imgs/map/tip-bottom.png&quot;)
+              repeat-x;
+          "
+        ></div>
+        <div
+          id="tip-left-bottom"
+          style="
+            background: url(&quot;chrome-extension://jpjgjbbhaifmiigkopmnpbgcgmigaame/imgs/map/tip-left-bottom.png&quot;);
+          "
+        ></div>
+        <div
+          id="tip-left"
+          style="
+            background: url(&quot;chrome-extension://jpjgjbbhaifmiigkopmnpbgcgmigaame/imgs/map/tip-left.png&quot;);
+          "
+        ></div>
+        <div id="trans-content"></div>
+      </div>
+      <div
+        id="tip-arrow-bottom"
+        style="
+          background: url(&quot;chrome-extension://jpjgjbbhaifmiigkopmnpbgcgmigaame/imgs/map/tip-arrow-bottom.png&quot;);
+        "
+      ></div>
+      <div
+        id="tip-arrow-top"
+        style="
+          background: url(&quot;chrome-extension://jpjgjbbhaifmiigkopmnpbgcgmigaame/imgs/map/tip-arrow-top.png&quot;);
+        "
+      ></div>
+    </div>
+  </body>
+</html>
